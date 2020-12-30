@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat, sans-serif;
+}
+
+:root {
+  --btn-danger: #eb5757;
+  --btn-primary: #2f80ed;
+  --tx-btn: #fff;
+  --border-color: #bdbdbd;
+}
+
+#container > div {
+  width: inherit;
+}
+
+.mt-2 {
+  margin-top: 2rem;
+}
+
+.mb-5 {
+  margin-bottom: 2vh;
+}
+
+.ml-mm {
+  margin-left: 0.25vw;
+}
+
+.fl-1 {
+  flex: 1;
+}
