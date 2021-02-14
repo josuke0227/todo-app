@@ -10,11 +10,11 @@ import EventHandlingContext from "../contexts/EventHandlingContext";
 import Footer from "./Footer";
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45vw;
-  margin: auto;
+  margin: 0 25vw;
+
+  @media (max-width: 400px) {
+    margin: 0 15vw;
+  }
 `;
 
 export default function App() {
@@ -65,6 +65,7 @@ export default function App() {
   function handleAdd(e) {
     e.preventDefault();
     if (!todo && !editing) return;
+
     let currentTodos = [...todos];
 
     if (editing) {
@@ -109,7 +110,10 @@ export default function App() {
     >
       <SelectedContext.Provider value={selected}>
         <Container id="container">
-          <h1 className="mt-2" style={{ fontWeight: "500" }}>
+          <h1
+            className="mt-2"
+            style={{ fontWeight: "500", textAlign: "center" }}
+          >
             #todo
           </h1>
           <Selector handleSelectorClick={handleSelectorClick} />
