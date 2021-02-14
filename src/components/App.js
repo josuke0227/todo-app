@@ -10,10 +10,10 @@ import EventHandlingContext from "../contexts/EventHandlingContext";
 import Footer from "./Footer";
 
 const Container = styled.div`
-  margin: 0 25vw;
+  margin: 0 5vw;
 
-  @media (max-width: 400px) {
-    margin: 0 15vw;
+  @media (min-width: 1000px) {
+    margin: 0 25vw;
   }
 `;
 

@@ -12,7 +12,7 @@ const StyledDeleteButton = styled.button`
   background-color: var(--btn-danger);
   border: none;
   border-radius: 4px;
-  height: 7vh;
+  padding: 1rem;
   width: 10vw;
   margin-top: 5vh;
   cursor: pointer;
